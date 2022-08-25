@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
+  background: #F6F4F2;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +16,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+section {
+  max-width: 1024px;
+  margin: 3rem auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .lg\:navbar-start {
+    width: 33.33% !important;
+    justify-content: flex-start !important;
+  }
+
+  .lg\:navbar-end {
+    width: 33.33% !important;
+    justify-content: flex-end !important;
+  }
+}
+
+/* 
+================= Color Code ===========
+1. White:  #F6F4F2
+2. black:  #425664
+3. Orange: #C6AD8F
+
+ */
