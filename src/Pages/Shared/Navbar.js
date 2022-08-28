@@ -1,8 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-secondary">
+    <nav className="bg-primary">
       <div className="navbar flex justify-between max-w-5xl mx-auto">
         <div className="block sm:hidden md:hidden lg:hidden ">
           <div className="dropdown">
@@ -42,12 +43,13 @@ const Navbar = () => {
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
         <div className="hidden md:block lg:block">
-          <a href="#" className=" text-md mr-6 font-semibold">
+          <NavLink to="/" className=" text-md mr-6 font-semibold">
             Home
-          </a>
-          <a href="#" className=" text-md mr-6 font-semibold">
+          </NavLink>
+          <NavLink to="shop" className=" text-md mr-6 font-semibold">
             Shop
-          </a>
+          </NavLink>
+
           <a href="#" className=" text-md mr-6 font-semibold">
             About us
           </a>

@@ -3,6 +3,7 @@ import "animate.css";
 // import "./App.css";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Pages/Shared/Navbar";
+import Shop from "./Pages/Shop/Shop";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="about" element={<About />} /> */}
+        <Route path="shop" element={<Shop />} />
       </Routes>
     </div>
   );
